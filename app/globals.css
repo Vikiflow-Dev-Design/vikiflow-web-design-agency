@@ -1,0 +1,325 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 267 100% 61%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 267 100% 61%;
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 267 100% 61%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 267 100% 61%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  /* Heading Styles */
+  h1 {
+    @apply text-display-2xl font-display font-bold tracking-tight mb-6;
+  }
+
+  h2 {
+    @apply text-display-xl font-display font-bold tracking-tight mb-5;
+  }
+
+  h3 {
+    @apply text-display-lg font-display font-bold tracking-tight mb-4;
+  }
+
+  h4 {
+    @apply text-display-md font-display font-semibold tracking-tight mb-4;
+  }
+
+  h5 {
+    @apply text-display-sm font-display font-semibold tracking-tight mb-3;
+  }
+
+  h6 {
+    @apply text-display-xs font-display font-semibold tracking-tight mb-3;
+  }
+
+  /* Body Text Styles */
+  p {
+    @apply text-body-lg text-muted-foreground leading-relaxed mb-6;
+  }
+
+  .lead {
+    @apply text-body-xl text-muted-foreground leading-relaxed mb-6;
+  }
+
+  .small {
+    @apply text-body-sm text-muted-foreground leading-normal;
+  }
+
+  /* Link Styles */
+  a {
+    @apply transition-colors duration-200;
+  }
+
+  /* List Styles */
+  ul,
+  ol {
+    @apply mb-6 ml-6;
+  }
+
+  li {
+    @apply mb-2 text-body-lg text-muted-foreground leading-relaxed;
+  }
+
+  /* Quote Styles */
+  blockquote {
+    @apply pl-6 border-l-4 border-primary/30 italic my-8;
+  }
+
+  /* Code Styles */
+  pre {
+    @apply p-4 rounded-lg bg-secondary/50 overflow-x-auto mb-6;
+  }
+
+  code {
+    @apply text-body-sm bg-secondary/50 px-1.5 py-0.5 rounded;
+  }
+}
+
+.bg-grid-dark {
+  background-size: 100px 100px;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+}
+
+.bg-grid-light {
+  background-size: 100px 100px;
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.05) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+
+.effect-1 {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.effect-1 > div {
+  width: 100%;
+}
+
+.effect-1 > div > div {
+  width: 100%;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+.projects-wrapper {
+  position: relative;
+  height: 300vh;
+}
+
+.projects-container {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-stack {
+  position: relative;
+  width: 80%;
+  height: 70vh;
+}
+
+.project-item {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-origin: center;
+}
+
+.project-item[data-status="active"] {
+  transform: translateY(0) scale(1);
+  opacity: 1;
+  z-index: 3;
+}
+
+.project-item[data-status="behind"] {
+  transform: translateY(-30%) scale(0.95);
+  opacity: 0.5;
+  z-index: 2;
+}
+
+.project-item[data-status="front"] {
+  transform: translateY(30%) scale(0.95);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.project-item[data-status="hidden"] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 1rem));
+  }
+}
+
+@keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%) rotateX(10deg);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) rotateX(0deg);
+    opacity: 1;
+  }
+}
+
+.animate-marquee {
+  animation: marquee linear infinite;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical linear infinite;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.parallax-container {
+  height: 300vh;
+  position: relative;
+}
+
+.parallax-content {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card {
+  position: absolute;
+  width: 80%;
+  height: 70vh;
+  transform-origin: center;
+  will-change: transform, opacity;
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.project-card.active {
+  z-index: 10;
+  opacity: 1;
+  transform: scale(1) translateY(0);
+}
+
+.project-card.prev {
+  z-index: 5;
+  opacity: 0.5;
+  transform: scale(0.95) translateY(-5%);
+}
+
+.project-card.next {
+  z-index: 5;
+  opacity: 0.5;
+  transform: scale(0.95) translateY(5%);
+}
+
+.project-card.hidden {
+  opacity: 0;
+  pointer-events: none;
+}

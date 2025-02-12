@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer gradient square -->
+  <rect width="45.2548" height="45.2548" rx="8" transform="matrix(0.707107 0.707107 -0.707107 0.707107 32 0)" fill="url(#gradient)" />
+  <!-- Inner background square -->
+  <rect width="33.9412" height="33.9412" rx="6" transform="matrix(0.707107 0.707107 -0.707107 0.707107 32 8)" fill="hsl(240 10% 3.9%)" />
+  <!-- Center gradient square -->
+  <rect width="22.6274" height="22.6274" rx="4" transform="matrix(0.707107 0.707107 -0.707107 0.707107 32 16)" fill="url(#gradient)" />
+  <!-- Letter V -->
+  <path d="M28.8 24L33.6 40L38.4 24H41.6L35.2 44H32L25.6 24H28.8Z" fill="white"/>
+  <!-- Gradient definition -->
+  <defs>
+    <linearGradient id="gradient" x1="0" y1="0" x2="45.2548" y2="45.2548" gradientUnits="userSpaceOnUse">
+      <stop stop-color="hsl(240 5.9% 10%)" />
+      <stop offset="1" stop-color="hsl(271 91% 65%)" />
+    </linearGradient>
+  </defs>
+</svg> 
