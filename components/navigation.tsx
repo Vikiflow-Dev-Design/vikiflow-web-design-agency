@@ -62,10 +62,16 @@ export function Navigation() {
         <div className="flex justify-between items-center h-14 sm:h-16">
           <Link
             href="/"
-            className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+            className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
-            <Logo />
-            <span className="font-bold text-xl">Vikiflow</span>
+            <div className="flex items-center gap-2">
+              <img
+                src="/favicon.svg"
+                alt="Vikiflow Logo"
+                className="w-8 h-8 text-primary"
+              />
+              <span className="text-xl font-bold text-primary">Vikiflow</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,16 +1,5 @@
 import Link from "next/link";
 import { Logo } from "@/components/logo";
-import {
-  Facebook,
-  Twitter,
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  ArrowRight,
-} from "lucide-react";
-import { Button } from "./ui/button";
 import { Newsletter } from "@/components/newsletter";
 
 export function Footer() {
@@ -20,7 +9,7 @@ export function Footer() {
         <div className="py-12 md:py-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-2 md:col-span-1">
-            <Logo asLink={false} />
+            <Logo asLink={true} />
             <p className="mt-4 text-sm text-muted-foreground">
               Transforming ideas into exceptional digital experiences.
             </p>

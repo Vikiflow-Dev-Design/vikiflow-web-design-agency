@@ -23,5 +23,9 @@ export default function ProjectPage({ params }: ProjectPageProps) {
     notFound();
   }
 
-  return <ProjectContent project={project} />;
+  return (
+    <div suppressHydrationWarning>
+      <ProjectContent project={project} />
+    </div>
+  );
 }

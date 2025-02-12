@@ -123,6 +123,8 @@ export default function RootLayout({
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
+          storageKey="vikiflow-theme"
+          forcedTheme={undefined}
         >
           <div className="relative flex min-h-screen flex-col">
             <Navigation />
