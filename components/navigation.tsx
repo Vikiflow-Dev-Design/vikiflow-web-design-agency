@@ -68,7 +68,7 @@ export function Navigation() {
               <img
                 src="/favicon.svg"
                 alt="Vikiflow Logo"
-                className="w-8 h-8 dark:invert group-hover:scale-105 transition-transform"
+                className="w-8 h-8 group-hover:scale-105 transition-transform"
               />
               <span className="text-xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent group-hover:from-purple-600 group-hover:to-primary transition-all duration-300">
                 Vikiflow
