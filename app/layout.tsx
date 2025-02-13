@@ -118,14 +118,7 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
       </head>
       <body className={cn(inter.variable, "font-sans antialiased")}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-          storageKey="vikiflow-theme"
-          forcedTheme={undefined}
-        >
+        <ThemeProvider>
           <div className="relative flex min-h-screen flex-col">
             <Navigation />
             <BackButton />

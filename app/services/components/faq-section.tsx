@@ -27,7 +27,7 @@ const faqs = [
   {
     question: "Do you offer e-commerce solutions?",
     answer:
-      "Yes, we build modern e-commerce solutions using cutting-edge platforms like Shopify and WooCommerce. We handle everything from product catalogs to payment processing and inventory management with a focus on innovation and user experience.",
+      "Yes, we build modern e-commerce solutions. We handle everything from product catalogs to payment processing and inventory management with a focus on innovation and user experience.",
   },
 ];
 

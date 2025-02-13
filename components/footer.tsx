@@ -101,22 +101,22 @@ export function Footer() {
 
         {/* Bottom Bar */}
         <div className="py-6 border-t flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-muted-foreground">
             © {new Date().getFullYear()} vikiflow. All rights reserved.
-          </p>
+            </p>
           <div className="flex items-center gap-4">
-            <Link
-              href="/privacy"
+              <Link
+                href="/privacy"
               className="text-sm text-muted-foreground hover:text-primary"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
+              >
+                Privacy Policy
+              </Link>
+              <Link
+                href="/terms"
               className="text-sm text-muted-foreground hover:text-primary"
-            >
-              Terms of Service
-            </Link>
+              >
+                Terms of Service
+              </Link>
           </div>
         </div>
       </div>
