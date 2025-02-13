@@ -2,23 +2,49 @@
 
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, ArrowUpRight, Play } from "lucide-react";
+import { ArrowRight, Sparkles, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
+
+const images = [
+  {
+    src: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80",
+    alt: "Modern web development workspace with code on screen",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80",
+    alt: "Creative web design process visualization",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?auto=format&fit=crop&q=80",
+    alt: "Web development team collaboration",
+  },
+];
 
 export function HeroSection() {
   const words = ["Development", "Design", "Branding", "SEO"];
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
+    const wordInterval = setInterval(() => {
+      setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
     }, 2000);
 
-    return () => clearInterval(interval);
-  }, []);
+    const imageInterval = setInterval(() => {
+      if (!isPaused) {
+        setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      }
+    }, 5000);
+
+    return () => {
+      clearInterval(wordInterval);
+      clearInterval(imageInterval);
+    };
+  }, [isPaused]);
 
   return (
     <>
@@ -41,7 +67,7 @@ export function HeroSection() {
         <div className="relative z-10 container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             {/* Beta Badge */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
@@ -60,7 +86,7 @@ export function HeroSection() {
                   Get 50% Off
                 </Link>
               </Badge>
-            </motion.div>
+            </motion.div> */}
 
             <div className="text-center space-y-8">
               {/* Main Heading */}
@@ -79,14 +105,14 @@ export function HeroSection() {
                   <div className="h-[1.2em] overflow-hidden mt-2">
                     <AnimatePresence mode="wait">
                       <motion.span
-                        key={currentIndex}
+                        key={currentWordIndex}
                         initial={{ y: 50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         exit={{ y: -50, opacity: 0 }}
                         transition={{ duration: 0.35 }}
                         className="block bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent"
                       >
-                        {words[currentIndex]}
+                        {words[currentWordIndex]}
                       </motion.span>
                     </AnimatePresence>
                   </div>
@@ -134,7 +160,7 @@ export function HeroSection() {
         </div>
       </section>
 
-      {/* Video Section */}
+      {/* Image Section */}
       <section className="relative bg-background pb-24">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -142,40 +168,52 @@ export function HeroSection() {
           transition={{ duration: 0.5, delay: 0.8 }}
           className="container mx-auto px-4"
         >
-          <div className="relative max-w-4xl mx-auto rounded-xl overflow-hidden group">
-            {/* Video Thumbnail */}
+          <div
+            className="relative max-w-4xl mx-auto rounded-xl overflow-hidden group"
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
             <div className="relative aspect-video bg-muted rounded-xl overflow-hidden shadow-2xl">
-              <div className="absolute inset-0 bg-black/10 group-hover:opacity-0 transition-opacity duration-300" />
-
-              {/* Video Player */}
-              {isVideoPlaying ? (
-                <video
-                  autoPlay
-                  controls
-                  className="w-full h-full object-cover"
-                  onEnded={() => setIsVideoPlaying(false)}
-                >
-                  <source src="/videos/showreel.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              ) : (
-                <>
-                  <img
-                    src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80"
-                    alt="Video thumbnail"
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                  />
-                  {/* Play Button */}
-                  <button
-                    onClick={() => setIsVideoPlaying(true)}
-                    className="absolute inset-0 flex items-center justify-center group/play"
+              <AnimatePresence mode="wait">
+                {images.map((image, index) => (
+                  <motion.div
+                    key={image.src}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: currentImageIndex === index ? 1 : 0 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.5 }}
+                    className={`absolute inset-0 ${
+                      currentImageIndex === index ? "z-10" : "z-0"
+                    }`}
                   >
-                    <div className="w-20 h-20 rounded-full bg-background/90 flex items-center justify-center backdrop-blur-sm transition-transform duration-300 group-hover/play:scale-110">
-                      <Play className="w-8 h-8 text-primary fill-primary" />
-                    </div>
-                  </button>
-                </>
-              )}
+                    <Image
+                      src={image.src}
+                      alt={image.alt}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      priority
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+                    />
+                  </motion.div>
+                ))}
+              </AnimatePresence>
+              <div className="absolute inset-0 bg-black/10 group-hover:opacity-0 transition-opacity duration-300" />
+            </div>
+
+            {/* Navigation Dots */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-20 flex space-x-2">
+              {images.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentImageIndex(index)}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    currentImageIndex === index
+                      ? "bg-primary w-4"
+                      : "bg-primary/50 hover:bg-primary/75"
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
             </div>
           </div>
         </motion.div>
