@@ -97,6 +97,17 @@ export function ProjectContent({ project }: ProjectContentProps) {
               </h3>
               <a
                 href={project.clientUrl}
+                onClick={(e) => {
+                  // Prevent navigation for invalid URLs or example domains
+                  if (
+                    !project.clientUrl ||
+                    project.clientUrl.includes("example.com") ||
+                    !project.clientUrl.startsWith("http")
+                  ) {
+                    e.preventDefault();
+                    return;
+                  }
+                }}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-primary hover:text-primary/80 transition-colors inline-flex items-center"

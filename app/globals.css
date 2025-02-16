@@ -323,3 +323,15 @@
   opacity: 0;
   pointer-events: none;
 }
+
+@media screen and (max-width: 900px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 12px;
+  }
+}

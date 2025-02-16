@@ -28,7 +28,7 @@ export const testimonials: Testimonial[] = [
     slug: "modern-ecommerce",
     image:
       "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800",
-    technologies: ["Shopify", "Custom CSS", "JavaScript"],
+    technologies: ["MongoDB", "Custom CSS", "JavaScript"],
     projectSlug: "healthcare-management-system",
   },
   {

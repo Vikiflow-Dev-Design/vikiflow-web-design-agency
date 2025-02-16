@@ -147,7 +147,7 @@ export const processSteps: ProcessStep[] = [
     number: "04",
     title: "Development",
     description:
-      "We primarily develop websites using modern frameworks and technologies for the vast majority of our clients. We are also proficient with WordPress and custom needs.",
+      "We primarily develop websites using modern frameworks and technologies for the vast majority of our clients.",
     longDescription:
       "In the development phase, we bring designs to life using cutting-edge technologies and best practices. Our developers write clean, efficient code that ensures your website is fast, secure, and scalable.\n\nWe implement modern frameworks and technologies while ensuring compatibility across different platforms and devices. Regular code reviews and testing during development help maintain high quality standards.",
     features: [

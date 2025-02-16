@@ -123,7 +123,7 @@ export const projects: Project[] = [
     process: "Market research, UX design, development",
     result: "250% increase in online sales",
     link: "https://example.com",
-    technologies: ["Next.js", "Stripe", "PostgreSQL", "AWS"],
+    technologies: ["Next.js", "Stripe", "Tailwind CSS", "Framer Motion"],
     testimonial: {
       author: "David Wilson",
       role: "Operations Director",
@@ -219,7 +219,7 @@ export const projects: Project[] = [
     process: "Brand strategy, UX design, development",
     result: "350% increase in online sales",
     link: "https://example.com",
-    technologies: ["Next.js", "Shopify", "Tailwind CSS", "Framer Motion"],
+    technologies: ["Next.js", "MongoDB", "Tailwind CSS", "Framer Motion"],
     testimonial: {
       author: "Emma Davis",
       role: "Creative Director",
