@@ -1,7 +1,8 @@
 // Import team member images
 import { StaticImageData } from "next/image";
-import josephMazeImage from "@/public/images/team/joseph-maze.png";
+import josephMazeImage from "@/public/images/team/profile 1.jpg";
 import victorEzekielImage from "@/public/images/team/victor-ezekiel.png";
+import sephCreativeImage from "@/public/images/team/victor-ezekiel2.jpg";
 
 export interface TeamMember {
   id: string;
@@ -79,33 +80,32 @@ export const teamMembers: TeamMember[] = [
       github: "https://github.com/joseph-maze",
     },
   },
-  // {
-  //   id: "3",
-  //   slug: "seph-creative",
-  //   name: "Seph Creative",
-  //   role: "Analytics & SEO Lead",
-  //   image:
-  //     "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=800&h=800&fit=crop",
-  //   bio: `Seph Creative leads our Analytics and SEO department with innovative strategies and
-  //   data-driven insights for our digital solutions. Their expertise in search engine optimization and
-  //   web analytics helps our clients achieve maximum visibility and performance in the digital space.
+  {
+    id: "3",
+    slug: "seph-creative",
+    name: "Seph Creative",
+    role: "Analytics & SEO Lead",
+    image: sephCreativeImage,
+    bio: `Seph Creative leads our Analytics and SEO department with innovative strategies and
+    data-driven insights for our digital solutions. Their expertise in search engine optimization and
+    web analytics helps our clients achieve maximum visibility and performance in the digital space.
 
-  //   With a deep understanding of modern SEO practices and analytics tools, Seph ensures our web solutions
-  //   are not just beautifully designed but also optimized for search engines and user engagement. Their
-  //   approach combines technical SEO knowledge with content strategy to drive organic growth.`,
-  //   expertise: [
-  //     "Search Engine Optimization",
-  //     "Web Analytics",
-  //     "Content Strategy",
-  //     "Keyword Research",
-  //     "Performance Tracking",
-  //     "Digital Marketing",
-  //   ],
-  //   education: "Master's in Digital Marketing",
-  //   contact: "seph.creative@vikiflow.com",
-  //   social: {
-  //     linkedin: "https://linkedin.com/in/seph-creative",
-  //     twitter: "https://twitter.com/seph_creative",
-  //   },
-  // },
+    With a deep understanding of modern SEO practices and analytics tools, Seph ensures our web solutions
+    are not just beautifully designed but also optimized for search engines and user engagement. Their
+    approach combines technical SEO knowledge with content strategy to drive organic growth.`,
+    expertise: [
+      "Search Engine Optimization",
+      "Web Analytics",
+      "Content Strategy",
+      "Keyword Research",
+      "Performance Tracking",
+      "Digital Marketing",
+    ],
+    education: "Master's in Digital Marketing",
+    contact: "seph.creative@vikiflow.com",
+    social: {
+      linkedin: "https://linkedin.com/in/seph-creative",
+      twitter: "https://twitter.com/seph_creative",
+    },
+  },
 ];

@@ -960,53 +960,6 @@ export const services = [
   },
 ];
 
-export const pricing = [
-  {
-    id: 1,
-    name: "Basic",
-    price: 999,
-    description: "Perfect for small businesses",
-    features: [
-      "5-page website",
-      "Basic SEO setup",
-      "Mobile responsive",
-      "Contact form",
-      "3 rounds of revisions",
-    ],
-    featured: false,
-  },
-  {
-    id: 2,
-    name: "Professional",
-    price: 2499,
-    description: "Ideal for growing businesses",
-    features: [
-      "10-page website",
-      "Advanced SEO",
-      "E-commerce integration",
-      "Custom animations",
-      "Unlimited revisions",
-      "Priority support",
-    ],
-    featured: true,
-  },
-  {
-    id: 3,
-    name: "Enterprise",
-    price: 4999,
-    description: "For large organizations",
-    features: [
-      "Unlimited pages",
-      "Full SEO suite",
-      "Custom functionality",
-      "Performance optimization",
-      "24/7 support",
-      "Dedicated manager",
-    ],
-    featured: false,
-  },
-];
-
 export const faqs = [
   {
     id: 1,
@@ -1074,5 +1027,52 @@ export const process = [
     id: 6,
     title: "Launch",
     description: "Deploying your project and providing post-launch support.",
+  },
+];
+
+export const pricing = [
+  {
+    id: 1,
+    name: "Basic",
+    price: 999,
+    description: "Perfect for small businesses",
+    features: [
+      "5-page website",
+      "Basic SEO setup",
+      "Mobile responsive",
+      "Contact form",
+      "3 rounds of revisions",
+    ],
+    featured: false,
+  },
+  {
+    id: 2,
+    name: "Professional",
+    price: 2499,
+    description: "Ideal for growing businesses",
+    features: [
+      "10-page website",
+      "Advanced SEO",
+      "E-commerce integration",
+      "Custom animations",
+      "Unlimited revisions",
+      "Priority support",
+    ],
+    featured: true,
+  },
+  {
+    id: 3,
+    name: "Enterprise",
+    price: 4999,
+    description: "For large organizations",
+    features: [
+      "Unlimited pages",
+      "Full SEO suite",
+      "Custom functionality",
+      "Performance optimization",
+      "24/7 support",
+      "Dedicated manager",
+    ],
+    featured: false,
   },
 ];
