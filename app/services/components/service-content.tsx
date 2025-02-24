@@ -7,6 +7,7 @@ import { Card } from "@/components/ui/card";
 import { useTheme } from "next-themes";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import { PageHeader } from "@/components/page-header";
+import Link from "next/link";
 
 interface ServiceContentProps {
   service: {
@@ -208,10 +209,12 @@ export function ServiceContent({ service }: ServiceContentProps) {
               <p className="text-lg text-muted-foreground mb-8">
                 {service.content.cta.description}
               </p>
-              <Button size="lg" className="group">
-                {service.content.cta.buttonText}
-                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </Button>
+              <Link href="/contact">
+                <Button size="lg" className="group">
+                  {service.content.cta.buttonText}
+                  <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                </Button>
+              </Link>
             </div>
           </motion.section>
         )}
