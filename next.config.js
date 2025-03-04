@@ -13,7 +13,18 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
-    domains: ['images.unsplash.com'],
+    domains: ["images.unsplash.com"],
+  },
+
+  // Add this watchOptions configuration
+  webpack: (config, { isServer, dev }) => {
+    if (dev && !isServer) {
+      // Ignore watching the pagefile.sys and other system files
+      config.watchOptions = {
+        ignored: [/node_modules/, /\.git/, /pagefile\.sys/],
+      };
+    }
+    return config;
   },
 };
 
