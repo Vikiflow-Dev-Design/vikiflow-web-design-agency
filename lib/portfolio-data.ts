@@ -67,7 +67,7 @@ export const projects: Project[] = [
       quote:
         "The website perfectly represents our company's professional image and has significantly increased our client inquiries.",
       avatar:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
+        "https://scontent-zrh1-1.xx.fbcdn.net/v/t39.30808-6/484446222_635725245882086_7803448033935390997_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH3etDx6QXQGbCdBZVTV4VLoy4SQOe_LV-jLhJA578tX7O19VmYZuWHHXSJaPgGJfrJr1lqwTtoOwxNjwB3LuTX&_nc_ohc=YypR0-rEH3MQ7kNvwGydA62&_nc_oc=AdlfzYl3VUggUTB_xRRBA1mMB-LzEjfQ3h7SSlUVN5ItM4LtRRUru56lIzlq19TwRSI&_nc_zt=23&_nc_ht=scontent-zrh1-1.xx&_nc_gid=qXJd2J7-8bNb1WTwZqYMvA&oh=00_AfHTx6vOsqbt4WKh3uMpxmWK51uFYyjwOzGl4t8gSuztfQ&oe=68094CCD",
     },
   },
   {
@@ -99,7 +99,7 @@ export const projects: Project[] = [
       quote:
         "Our new website has transformed how we showcase our services and connect with clients.",
       avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
+        "https://scontent-zrh1-1.xx.fbcdn.net/v/t39.30808-6/483099815_4103632016585092_7573577240239466982_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEdFKeCVk40mLNYRtMbf-ogtLF5NhtOXxe0sXk2G05fF6nk4kWBCpsrs4Icqu16zpOtcVoWdFvkG7-aG74U9lvF&_nc_ohc=gN7wHEbGkp0Q7kNvwGX2aeP&_nc_oc=AdmuWAC6Ji-E0gYPoFGWMq6ZbRZMnAkAhWUmAriFe7reMnLFeQ4EMGqOLfcf4Schr4M&_nc_zt=23&_nc_ht=scontent-zrh1-1.xx&_nc_gid=CqGlomhy_ZPapoPs-r8dpA&oh=00_AfHW_qFAffi2-Ba5TFl6CP3J-R5vNC_lf3OTa_DnjOe7ow&oe=68095DE9",
     },
   },
   {
@@ -131,7 +131,7 @@ export const projects: Project[] = [
       quote:
         "The platform has revolutionized how we sell agricultural products and serve our customers.",
       avatar:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+        "https://scontent-zrh1-1.xx.fbcdn.net/v/t39.30808-6/392918880_313476734770944_6859275778171937365_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFtdOPW_-Qc9oRV1zgLu5Y7KpS64VqLoOEqlLrhWoug4UK3LhP-Y5i0LUuZJHbA_HQXjh9COzX3YHh5F-sc39si&_nc_ohc=D1JI-aTd_LgQ7kNvwGYT3r-&_nc_oc=Adm3Ralt6ibuvLfYumjMcmThRRJF8Hxjq1khLO0IfIqu95TNhIGmn0JIoVDcpaBmwns&_nc_zt=23&_nc_ht=scontent-zrh1-1.xx&_nc_gid=Ek1LE34gr6r_fKZRnOJ4Hw&oh=00_AfGCaiijXpnebiHOeIhma5J06YpsvUTMlHYdoVkUPz6lUQ&oe=680944D5",
     },
   },
   {
@@ -163,7 +163,7 @@ export const projects: Project[] = [
       quote:
         "Our new website has made it easier than ever for members to engage with our services.",
       avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
+        "https://scontent-zrh1-1.xx.fbcdn.net/v/t1.6435-9/118621603_184607689744746_3007382943538631972_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHcW9hmD9WNs5E2cni8n_3eN4Mep0N5bBc3gx6nQ3lsF8vYCUmQRa5bnbi288LZKqMPJRJUSMn8ZBelQ5wrBrvU&_nc_ohc=Ma8-SrccmO0Q7kNvwG1GEKH&_nc_oc=AdnXcftP5t_0P8f2qhrAVvsScXN32B3VJEoMaUu85CA2hn9_EYRi3wMQyJz5peWC3JU&_nc_zt=23&_nc_ht=scontent-zrh1-1.xx&_nc_gid=VnL4EnxWgolFDZadL35zfw&oh=00_AfHpUgmZPPex-taiJ1e9OK_U1VBSKs5JTEiPBV6lIzY6TQ&oe=682ACF31",
     },
   },
   {
@@ -195,7 +195,7 @@ export const projects: Project[] = [
       quote:
         "The booking platform has transformed our business operations and customer experience.",
       avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
+        "https://scontent-zrh1-1.xx.fbcdn.net/v/t1.6435-9/132820046_2838694679783517_6940635588116898838_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeF1O58exPMbci76mWQHIsY89q_7WCUIgon2r_tYJQiCiTEGkmCy30kcfLg1_rh2byNcJfP_Ml763tz_UYDKukOn&_nc_ohc=JEGTmLKMWYIQ7kNvwG6bB2l&_nc_oc=AdnEwBmIY-vSsCBvPi7PijEA4i5ChtoucXDJ9QrGxxdZY5yezXNAzWzCG3DZxCC7iAc&_nc_zt=23&_nc_ht=scontent-zrh1-1.xx&_nc_gid=A5wdkh_-V91zAA_-rCH9aA&oh=00_AfF6VnfaQFtM3wElxgMLcZuxfcrCZkmhtP_Y5VSyUp8xRw&oe=682AF04A",
     },
   },
   {
@@ -227,7 +227,7 @@ export const projects: Project[] = [
       quote:
         "Our new e-commerce platform perfectly captures our brand essence and has significantly boosted our sales.",
       avatar:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=400",
+        "https://scontent-zrh1-1.xx.fbcdn.net/v/t39.30808-6/441065482_1973183803132116_6238604697524922969_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEIn6UtukvrPGUoqyyiLBjwQ7TtFCtvdi5DtO0UK292LudMW8D1fr8xCtOYYGM_TT6d8FpNRJRG3xyHUsUKRwbs&_nc_ohc=YiAAxhb1i7oQ7kNvwHKyWxT&_nc_oc=AdnpEivNXxJreFalgKghuDNuBKGB6JeTS0xlrJQD-mqddi30aY367-jxiV2ZSLFFdQU&_nc_zt=23&_nc_ht=scontent-zrh1-1.xx&_nc_gid=xU0tfoIHrhVCqOqF7_boOg&oh=00_AfFg55M8IyM13pDds_7OQgj21woQkUct1_zvyo7gzXnq2A&oe=6809479C",
     },
   },
 ];
